@@ -1,45 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
-.login-container-split {
+.main-container {
     font-family:'Montserrat',sans-serif ;
   display: flex;
-  height: 570px;; /* Adjust for potential header height */
-  background-color: #f8f9fa; /* Light grey background */
-  margin-top: 80px; /* Add some space from the top */
+  height: 570px;
+  background-color: #f8f9fa; 
+  margin-top: 80px; 
 }
 
-.login-video-container {
+.left-container {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  overflow: hidden; /* Prevent video overflow */
+  overflow: hidden; 
 }
 
 .login-video {
   max-width: 80%;
   height: auto;
-  border-radius: 10px; /* Optional: Add rounded corners to the video */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Optional: Add a subtle shadow */
+  border-radius: 10px;
 }
 
-.login-card {
+.right-container {
   flex: 1;
   background-color: #fff;
   padding: 40px;
-  border-radius: 0 10px 10px 0; /* Round right corners */
+  border-radius: 0 10px 10px 0; 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically in the right column */
+  justify-content: center; 
 }
 
-.login-card h1 {
+.right-container h1 {
   text-align: center;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.login-card p{
+.right-container p{
     text-align: center;
 }
 
@@ -58,17 +57,17 @@
   box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
 }
 
-.form-floating > label {
-  padding: 0.75rem;
-}
 
+ .form-floating > label {
+  padding: 0.75rem;
+} 
 .invalid-feedback {
-  color: #dc3545; /* Error red color */
+  color: #dc3545; 
   margin-top: 5px;
   font-size: 0.875rem;
 }
 
-.btn-success {
+.btn {
   background-color: #007bff;
   border-color: #007bff;
   color: #fff;
@@ -79,14 +78,14 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-success:hover,
-.btn-success:focus {
+.btn:hover,
+.btn:focus {
   background-color: #007bff;
   border-color: #007bff;
   opacity: 0.6;
 }
 
-.btn-success:disabled {
+.btn:disabled {
   background-color: #6c757d;
   border-color: #6c757d;
   cursor: not-allowed;

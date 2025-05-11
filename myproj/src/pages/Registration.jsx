@@ -3,10 +3,10 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { Button } from "react-bootstrap";
-import "./registration.css"; // Import the CSS file
-import regImg from "../images/register.jpg"; // Import your image
+import "./registration.css"; 
+import regImg from "../images/register.jpg"; 
 
-// Define the validation schema using Yup
+
 const registrationSchema = yup.object().shape({
   firstName: yup.string().required("First Name is required"),
   lastName: yup.string().required("Last Name is required"),
@@ -35,22 +35,25 @@ function Registration() {
   });
 
   const onSubmit = (data) => {
-    // Handle form submission (e.g., send data to an API)
     console.log(data);
-    reset(); // Clear the form after successful submission
+    reset();
   };
 
   return (
-    <div className="registration-container-split">
-      <div className="registration-left">
+
+    <div className="main-container">
+    {/* left container starts  */}
+      <div className="left-container">
         <h1>Escape the ordinary </h1>
-        <p className="lead">Reliable rides for every meeting</p>
-        <img src={regImg} alt="Registration" className="registration-image" />
+        <p className="sub">Reliable rides for every meeting</p>
+        <img src={regImg} alt="Registration" className="reg-image" />
       </div>
-      <div className="registration-right">
+      {/* left container end here  */}
+      <div className="right-container">
+      {/* right container start here   */}
         <h1>Create Your Account </h1>
-        <p className="lead">Join our community and unlock amazing features!</p>
-        <form onSubmit={handleSubmit(onSubmit)} className="registration-form">
+        <p className="sub">Join our community and unlock amazing features!</p>
+        <form onSubmit={handleSubmit(onSubmit)} className="reg-form">
           <div className="form-floating mb-3">
             <input
               type="text"
@@ -133,6 +136,7 @@ function Registration() {
             {isSubmitting ? "Creating Account..." : "Create Account"}
           </Button>
         </form>
+        {/* right container end here  */}
       </div>
     </div>
   );

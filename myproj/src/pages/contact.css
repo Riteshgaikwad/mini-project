@@ -3,7 +3,7 @@
     margin-top: 80px;
   display: flex;
   height: 570px;
-  background: linear-gradient(135deg, #f0f2f0, #e0e0e0); /* Subtle gradient background */
+  background: linear-gradient(135deg, #f0f2f0, #e0e0e0); 
   background-image: url(../images/contactbg.jpg);
   background-size: cover;
   padding: 30px;
@@ -15,15 +15,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end; /* Align text to the left */
-  padding-right: 40px; /* Add some spacing between left and right */
+  align-items: end; 
+  padding-right: 40px; 
 }
 
 .contact-right h1 {
     font-family:'Montserrat',sans-serif ;
   color: #333;
   margin-bottom: 20px;
-  font-size: 2.5rem; /* Make the heading larger */
+  font-size: 2.5rem; 
 }
 
 .contact-right .lead {
@@ -42,13 +42,13 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align form content to the top */
+  justify-content: flex-start; 
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px; /* Add space between form and contact info */
+  margin-bottom: 20px;
 }
 
 .form-group {

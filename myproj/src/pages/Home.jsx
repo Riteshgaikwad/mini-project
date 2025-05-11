@@ -10,19 +10,20 @@ import bg from "../images/bg.jpg";
 function Home() {
   return (
     <div className="pt-5">
-      {" "}
-      {/* Add top padding to account for fixed navigation */}
       <section className="bg-light py-5">
+        {/* my main section start  */}
         <div className="container">
+          {/* first container starting  */}
           <div className="row align-items-center">
             <div className="col-md-6">
+              {/* left container  */}
               <h1 className="display-4 fw-bold mb-3">
                 Request a ride for now or later
               </h1>
               <p className="lead mb-4">
                 Add your trip details, hop in, and go.
               </p>
-              
+
               <div className="mb-4">
                 <label
                   htmlFor="enterLocation"
@@ -35,7 +36,7 @@ function Home() {
                   className="form-control"
                   id="enterLocation"
                   placeholder="Enter Location"
-                  style={{ outline: "none", boxShadow: "none" }} // Remove focus outline
+                  style={{ outline: "none", boxShadow: "none" }}
                 />
               </div>
               <div className="mb-4">
@@ -50,7 +51,7 @@ function Home() {
                   className="form-control"
                   id="enterDestination"
                   placeholder="Enter destination"
-                  style={{ outline: "none", boxShadow: "none" }} // Remove focus outline
+                  style={{ outline: "none", boxShadow: "none" }}
                 />
               </div>
               <div>
@@ -60,23 +61,30 @@ function Home() {
                 </button>
               </div>
             </div>
+            {/* right container starts here  */}
             <div className="col-md-6 d-none d-md-block">
               <img
                 src={bg}
                 alt="Request a ride"
                 className="img-fluid rounded-lg shadow-sm"
-                style={{ maxWidth: "80%", height: "auto" }} // Adjust image size
+                style={{ maxWidth: "80%", height: "auto" }}
               />
             </div>
           </div>
+          {/* first container div ends here  */}
         </div>
+        {/* main section ends here  */}
       </section>
-      {/* Full-screen section 1 */}
+
+      {/* secont section og home start  */}
       <section className="bg-light py-5 vh-100 d-flex align-items-center justify-content-center">
         <div className="container text-center">
+          {/* min container start here  */}
           <h2>Global mobility ecosystem driving communities forward</h2>
           <div className="row justify-content-around mt-4">
+            {/* inner div for 3 sencion  */}
             <div className="col-md-3">
+              {/* 1 st div  */}
               <img
                 src={data1}
                 alt="Cities Covered"
@@ -90,6 +98,7 @@ function Home() {
               </p>
             </div>
             <div className="col-md-3">
+              {/* 2 nd div  */}
               <img
                 src={data2}
                 alt="Yearly Rides"
@@ -103,6 +112,7 @@ function Home() {
               </p>
             </div>
             <div className="col-md-3">
+              {/* 3 rd div  */}
               <img
                 src={data3}
                 alt="Kilometers on S1"
@@ -118,15 +128,17 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* Full-screen section 2 */}
+
       <section className="py-5 bg-white vh-100 d-flex align-items-center justify-content-center">
+        {/* third section oh home starts here  */}
         <div className="container text-center">
           <h1 className="text-3xl font-bold text-gray-800 mb-4">
             There's an Pick me up ride for everyone
           </h1>
           <div className="row justify-content-center">
-            {/* For any budget */}
+            {/* dividing it in three sections  */}
             <div className="col-md-4 mb-4">
+              {/* 1 st section  */}
               <div className="card border-0 shadow-sm rounded-lg">
                 <img
                   src={car1}
@@ -145,7 +157,7 @@ function Home() {
               </div>
             </div>
 
-            {/* For any distance */}
+            {/* 2 nd section  */}
             <div className="col-md-4 mb-4">
               <div className="card border-0 shadow-sm rounded-lg">
                 <img
@@ -166,7 +178,7 @@ function Home() {
               </div>
             </div>
 
-            {/* For any duration */}
+            {/* 3 rd section  */}
             <div className="col-md-4 mb-4">
               <div className="card border-0 shadow-sm rounded-lg">
                 <img

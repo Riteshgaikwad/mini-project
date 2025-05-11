@@ -14,7 +14,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar /> {/* Include the Navbar component */}
+          {/* main div  */}
+        <Navbar /> 
+        {/* main content div start after nav */}
         <div className="container mt-4  "> {/* Add some margin for content */}
           <Routes>
             <Route path="/" element={<Home />} />
@@ -25,8 +27,11 @@ function App() {
             <Route path="/users" element={<Users />} />
           </Routes>
         </div>
-        <Footer /> {/* Include the Footer component */}
+        {/* main div end here  */}
+        <Footer /> 
+        
       </div>
+      {/* main div end  */}
     </BrowserRouter>
   );
 }

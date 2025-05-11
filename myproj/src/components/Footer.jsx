@@ -1,22 +1,20 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaTwitter, FaInstagram, FaEnvelope } from "react-icons/fa"; // Import social media icons
+import { FaTwitter, FaInstagram, FaEnvelope } from "react-icons/fa"; 
 
 function Footer() {
   return (
     <footer className="bg-dark text-light py-4 mt-5">
-      {" "}
-      {/* mt-5 adds some top margin */}
       <div className="container">
+      {/* main div starts here */}
         <div className="row">
-          {/* First Section: Brand and Social Icons */}
+
+          {/* div for name and social media icons */}
           <div className="col-md-4">
             <h5 className="mb-3 fs-2">Pick Me Up</h5>
             <div className="d-flex gap-3">
               <a
                 href="https://twitter.com"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="text-light"
               >
                 <FaTwitter size={24} />
@@ -24,7 +22,6 @@ function Footer() {
               <a
                 href="https://instagram.com"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="text-light"
               >
                 <FaInstagram size={24} />
@@ -35,7 +32,8 @@ function Footer() {
             </div>
           </div>
 
-          {/* Second Section: Navigation Links (Assuming you have a Navbar) */}
+
+          {/* div for the links with all pages created */}
           <div className="col-md-4">
             <h5 className="mb-3">Explore</h5>
             <ul className="list-unstyled">
@@ -81,11 +79,12 @@ function Footer() {
                   Free Test Ride
                 </a>
               </li>
-              {/* Add other navigation links as needed */}
             </ul>
           </div>
 
-          {/* Third Section: Important Information */}
+
+
+          {/* div for other things same as ola website */}
           <div className="col-md-4">
             <h5 className="mb-3">Information</h5>
             <ul className="list-unstyled">
@@ -113,15 +112,19 @@ function Footer() {
                   Contact Us
                 </a>
               </li>
-              {/* You could also add links to FAQs, Help Center, etc. */}
             </ul>
           </div>
         </div>
+
+
+        {/* end part of footer  */}
         <hr className="text-light my-4" />
         <p className="text-center text-light">
           &copy; {new Date().getFullYear()} Pick me up. All rights reserved.
         </p>
       </div>
+
+      {/* main div end here */}
     </footer>
   );
 }

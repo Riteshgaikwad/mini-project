@@ -1,5 +1,5 @@
 import { Button } from 'react-bootstrap';
-import './contact.css'; // Import the CSS file
+import './contact.css'; 
 
 function Contact() {
   return (

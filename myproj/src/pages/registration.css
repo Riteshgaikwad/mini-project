@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
 
-.registration-container-split {
+.main-container {
   display: flex;
   min-height: 100vh;
   padding-top: 50px;
 }
 
-.registration-left {
+.left-container {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -16,30 +16,30 @@
   text-align: center;
 }
 
-.registration-left h1 {
-  color: #37474f; /* Dark grey heading */
+.left-container h1 {
+  color: #37474f; 
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.registration-left .lead {
-  color: #546e7a; /* Slate grey lead text */
+.left-container .sub {
+  color: #546e7a; 
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 30px;
 }
 
-.registration-image {
+.reg-image {
   max-width: 60%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.registration-right {
+.right-container {
   flex: 1;
   background-color: #fff;
   border-radius: 15px;
@@ -49,10 +49,10 @@
   flex-direction: column;
   justify-content: center;
 }
-.registration-right h1{
+.right-container h1{
     font-weight: 700;
 }
-.registration-form {
+.reg-form {
   display: flex;
   flex-direction: column;
 }
@@ -63,21 +63,21 @@
 
 .form-floating label {
   color: #37474f;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .form-control {
-  border: 1px solid #cfd8dc; /* Light grey border */
+  border: 1px solid #cfd8dc; 
   border-radius: 8px;
   padding: 12px 15px;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transition: border-color 0.3s ease;
 }
 
 .form-control:focus {
   outline: none;
-  border-color: #007bff; /* Primary blue focus */
+  border-color: #007bff;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
@@ -86,7 +86,7 @@
 }
 
 .invalid-feedback {
-  color: #d32f2f; /* Red error text */
+  color: #d32f2f; 
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
   margin-top: 5px;

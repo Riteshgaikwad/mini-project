@@ -2,10 +2,10 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { Button } from 'react-bootstrap';
-import './login.css'; // Import the CSS file
-import loginVideo from '../images/logg.mp4'; // Import your video
+import './login.css';
+import loginVideo from '../images/logg.mp4';
 
-// Define the validation schema using Yup
+
 const loginSchema = yup.object().shape({
   email: yup
     .string()
@@ -24,17 +24,19 @@ function Login() {
   });
 
   const onSubmit = (data) => {
-    // Handle form submission (e.g., send data to an API)
+
     console.log('Login Data:', data);
-    // You would typically send this data to your authentication backend
+
   };
 
   return (
-    <div className="login-container-split">
-      <div className="login-video-container">
+    <div className="main-container">
+    {/* left container start  */}
+      <div className="left-container">
         <video src={loginVideo} autoPlay loop muted className="login-video" />
       </div>
-      <div className="login-card">
+      {/* right constainer starts here  */}
+      <div className="right-container">
         <h1>Login to your account</h1>
         <p>Enter your registered email ID and password</p>
         <form onSubmit={handleSubmit(onSubmit)} className="form-group">
@@ -64,10 +66,11 @@ function Login() {
             )}
           </div>
 
-          <Button type="submit" className="btn-success w-100" disabled={isSubmitting}>
+          <Button type="submit" className="btn w-100" disabled={isSubmitting}>
             {isSubmitting ? 'Logging in...' : 'Login'}
           </Button>
         </form>
+        {/* right container end here  */}
       </div>
     </div>
   );

@@ -11,7 +11,6 @@ function Users() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        // Replace with your actual API endpoint
         const response = await axios.get('https://jsonplaceholder.typicode.com/users');
         setUsers(response.data);
       } catch (err) {
@@ -23,13 +22,13 @@ function Users() {
 
     fetchUsers();
   }, []);
-
+  // if it is loading
   if (loading) {
-    return <div>Loading...</div>; // Simple loading indicator
+    return <div>Loading...</div>; 
   }
-
+ // if we have an error then 
   if (error) {
-    return <div>Error: {error.message}</div>; // Simple error message
+    return <div>Error: {error.message}</div>; 
   }
 
   return (

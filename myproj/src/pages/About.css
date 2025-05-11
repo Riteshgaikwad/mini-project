@@ -101,7 +101,7 @@
  object-fit: cover;
 }
 
-/* Responsive adjustments */
+/* media quesies  */
 @media (max-width: 768px) {
  .person {
  flex-direction: column;
