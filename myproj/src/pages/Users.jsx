@@ -33,7 +33,7 @@ function Users() {
   }
 
   return (
-    <div className="container">
+    <div className="container pt-5">
       <h1>Users</h1>
       <Table striped bordered hover>
         <thead>

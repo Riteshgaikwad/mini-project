@@ -1,11 +1,10 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand fs-4 fw-bold" to="/">
           Pick Me Up
         </Link>
         <button

@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar /> {/* Include the Navbar component */}
-        <div className="container mt-4"> {/* Add some margin for content */}
+        <div className="container mt-4  "> {/* Add some margin for content */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/register" element={<Registration />} />
